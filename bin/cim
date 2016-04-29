@@ -1,0 +1,41 @@
+#! /usr/bin/env node
+
+var path = require('path');
+var argv = require('yargs').argv;
+
+var cmd = argv._[0];
+
+if (cmd) {
+  init(cmd);
+}else{
+  showTip();
+}
+
+function init(name) {
+  console.log('  create an ionic module named \"' + cmd + '\".....');
+  var generate = require(path.resolve(__dirname, '..', 'src', 'generate.js'));
+  generate.init(name);
+}
+
+
+function showTip() {
+  console.error('  you should be input an ionic module name!!');
+}
+
+
+
+// switch (cmd) {
+//     case 'build':
+//     case 'login':
+//     case 'init':
+//     case 'server':
+//     case 'deploy':
+//         console.log('Running ' + cmd);
+//         var command = require(path.resolve(__dirname, '..', 'dist', cmd + '.js')),
+//             context = chcpContext.context(argv);
+//         command.execute(context);
+//         break;
+//     default:
+//         console.log('TODO: Should print usage instructions.');
+//         process.exit(0);
+// }

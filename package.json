@@ -1,0 +1,28 @@
+{
+  "name": "create-ionic-module",
+  "version": "0.0.1",
+  "description": "Auto generation module",
+  "preferGlobal": "true",
+  "bin": {
+    "cim": "bin/cim"
+  },
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarden-liu/create-ionic-module.git"
+  },
+  "keywords": [
+    "jarden-liu",
+    "ionic",
+    "mobile",
+    "create-ionic-module"
+  ],
+  "author": "jarden-liu",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^4.6.0"
+  },
+  "devDependencies": {}
+}
