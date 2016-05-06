@@ -5,7 +5,7 @@ Create-ionic-module
 
 ##安装
 ```bash
-  $ sudo npm insall -g https://github.com/jarden-liu/create-ionic-module.git
+  $ sudo npm install -g https://github.com/jarden-liu/create-ionic-module.git
 ```
 
 ##使用
